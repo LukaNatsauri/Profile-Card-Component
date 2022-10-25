@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Card Component</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kumbh Sans"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("bg-pattern-top.svg"),
+          url("bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: calc(-45vw + 100%) calc(-45vh + 100%), 45vw 45vh;
+        background-color: hsl(185, 75%, 39%);
+        font-family: "Kumbh Sans";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .profile {
+        background: white;
+        width: 350px;
+        height: 374px;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .profile-picture {
+        border: 5px solid #ffffff;
+        border-radius: 50%;
+        transform: translate(0%, -50%);
+      }
+
+      .person-info {
+        transform: translate(0%, -80%);
+      }
+
+      .name-age {
+        margin-bottom: 13px;
+      }
+
+      .name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #2e3349;
+      }
+
+      .age {
+        font-weight: 400;
+        font-size: 18px;
+        margin-left: 8.5px;
+      }
+
+      .city {
+        font-weight: 400;
+        font-size: 14px;
+        color: #6b7082;
+        border-bottom: 1px solid #e8e9ec;
+        padding-bottom: 1rem;
+      }
+
+      .a1 {
+        transform: translate(0%, -70%);
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 18px;
+        color: #2e3349;
+      }
+
+      .a1 p {
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: #6b7082;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile">
+      <img src="bg-pattern-card.svg" />
+      <img src="image-victor.jpg" class="profile-picture" />
+      <div class="person-info">
+        <h1 class="name">Victor Crest<span class="age">26</span></h1>
+        <p class="city">London</p>
+      </div>
+      <div class="a1">
+        <div class="followers">
+          <h2>80K</h2>
+          <p>Followers</p>
+        </div>
+        <div class="likes">
+          <h2>803K</h2>
+          <p>Likes</p>
+        </div>
+        <div class="photos">
+          <h2>1.4K</h2>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
